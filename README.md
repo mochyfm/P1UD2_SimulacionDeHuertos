@@ -1,18 +1,7 @@
-## Getting Started
+## RAMA DE PLANTILLA
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+En esta rama se han hecho todos los ajustes para poder realizar los tres experimentos
 
-## Folder Structure
-
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+<p><a href="https://github.com/mochyfm/P1UD2_SimulacionDeHuertos/tree/experimento-uno">1. Experimento uno</a></p>
+<p><a href="https://github.com/mochyfm/P1UD2_SimulacionDeHuertos/tree/experimento-dos">2. Experimento dos</a></p>
+<p><a href="https://github.com/mochyfm/P1UD2_SimulacionDeHuertos/tree/experimento-tres">3. Experimento tres</a></p>
