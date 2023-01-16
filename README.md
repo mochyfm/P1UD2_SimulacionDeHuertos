@@ -1,18 +1,22 @@
-## Getting Started
+<h3>EXPERIMENTO TRES</h3>
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+En una rama llamada “experimento-tres”, establece prioridades más altas para los hilos de los productores. ¿El resultado es similar al caso en el que hacemos los tiempos de producción más cortos? Muestra una captura del output de la consola.    
 
-## Folder Structure
+Para este apartado, el requisito a cambiar únicamente es la prioridad del productor y el cliente, el resultado es muy similar al que nos encontramos en el primer experimento, pero antes de llegar al resultado, deberemos ver donde se establece dicha prioridad:
 
-The workspace contains two folders by default, where:
+##### Cliente
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+<image src="https://github.com/mochyfm/P1UD2_SimulacionDeHuertos/blob/experimento-tres/imgs/clientPriority.png" alt="Nivel de prioridad del Thread (1)"/>
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+##### Granjero
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+<image src="https://github.com/mochyfm/P1UD2_SimulacionDeHuertos/blob/experimento-tres/imgs/farmerPriority.png" alt="Nivel de prioridad del Thread (10)"/>
 
-## Dependency Management
+Una vez le establecemos la prioridad, podemos ver el resultado:
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+
+<image src="https://github.com/mochyfm/P1UD2_SimulacionDeHuertos/blob/experimento-tres/imgs/consoleOutput.png" alt="Resultado por consola"/>
+
+Como se puede apreciar, el resultado es exactamente igual al que tenemos en el [experimento-uno](https://github.com/mochyfm/P1UD2_SimulacionDeHuertos/tree/experimento-uno), con la diferencia en que el proceso del granjero tendra siempre la hortaliza creada antes que el cliente la compra, es decir. La prioridad asigna a nivel de programa (no a nivel de S.O) una ejecución prioritaria, esto hará que el granjero siempre se ejecute antes que el cliente, aun habiendo previamente verduras en el huerto que el cliente pueda comprar.
+
+[Anterior punto (experimento-dos) :arrow_backward:](https://github.com/mochyfm/P1UD2_SimulacionDeHuertos/tree/experimento-dos) 
