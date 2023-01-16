@@ -1,29 +1,26 @@
-package Class;
+package Threads;
 
-import Threads.Orchard;
-import Utils.Utils;
+import Class.Orchard;
 
 public class Client extends Thread {
 
     private String name;
     private Orchard orchard;
+    private int consumptionTime;
     private int maxOfVegetables;
 
-    public Client(String name, int maxOfVegetables, Orchard orchard) {
+    public Client(String name, int maxOfVegetables, Orchard orchard, int consumptionTime) {
         this.name = name;
         this.maxOfVegetables = maxOfVegetables;
         this.orchard = orchard;
-    }
-
-    public int consumptionTime() {
-        return Utils.getRandomNumber(20);
+        this.consumptionTime = consumptionTime;
     }
 
     public void run() {
         int consumedVegetables = 0;
-        while(this.maxOfVegetables > consumedVegetables) {
+        while (this.maxOfVegetables > consumedVegetables) {
             try {
-                Thread.sleep(consumptionTime());
+                Thread.sleep(consumptionTime * 1000);
                 String vegetableObtained = this.orchard.pickUp(this.name);
                 System.out.println(this.name + " ha comprado " + vegetableObtained);
                 this.orchard.showStock();
@@ -34,5 +31,4 @@ public class Client extends Thread {
         }
     }
 
-    
 }

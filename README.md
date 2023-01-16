@@ -1,18 +1,30 @@
-## Getting Started
+### EXPERIMENTO DOS
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+<br/>
 
-## Folder Structure
+<p>En una rama llamada <i>experimento-dos</i>, cambia los parámetros de tiempo de producción y hazlos más cortos que los del tiempo en el que el cliente consume los productos. Muestra una captura del output de la consola. ¿Observas algún cambio en la salida?<p>
 
-The workspace contains two folders by default, where:
+Para poder realizar esta sección, he realizado una alteración en el tiempo que posee cada uno.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+<h4>Anterior tiempo</h4>
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+<img src="https://github.com/mochyfm/P1UD2_SimulacionDeHuertos/blob/experimento-dos/imgs/oldTime.png" alt="Anterior Tiempo" />
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+<h4>Nuevo tiempo</h4>
 
-## Dependency Management
+<img src="https://github.com/mochyfm/P1UD2_SimulacionDeHuertos/blob/experimento-dos/imgs/newTime.png" alt="Nuevo Tiempo" />
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+<p>El resultado es el siguiente: </p>
+
+<img src="https://github.com/mochyfm/P1UD2_SimulacionDeHuertos/blob/experimento-dos/imgs/consoleOutput_1.png" alt="Resultado de la consola 1." />
+
+<img src="https://github.com/mochyfm/P1UD2_SimulacionDeHuertos/blob/experimento-dos/imgs/consoleOutput_2.png" alt="Resultado de la consola 2." />
+
+<h3> Conclusión </h3>
+
+<p>Lo que ocurre es que, a diferencia de lo que ocurría con el <i>experimento-uno</i>, en este caso el Cliente no llega a consumir los productos hasta que el Granjero produzca unas cuantas verduras. ¿A qué se debe esto?, pues simple, al Granjero tener un tiempo de crecimiento tan pequeño, tarda menos en plantar los vegetales y que estos crezcan haciendo que el Scheduler le asigne una prioridad mayor para que según entre salga antes, mientras que el cliente entrará en algun punto de entre medias cuando el Scheduler vea que lleva mucho tiempo esperando. </p>
+
+<b>EJEMPLO:</b><i> Es como si pusiesemos como simil en la vida real, cuando estas en la cola del super y dejas pasar a la gente que tienes menos compra, si dejas pasar mucha gente con poca compra el cajero te dira que pases tu para que tambien puedas salir.</i>
+
+[Anterior punto (experimento-uno) :arrow_backward:](https://github.com/mochyfm/P1UD2_SimulacionDeHuertos/tree/experimento-uno) <br/>
+[Siguiente punto (experimento-tres) :arrow_forward:](https://github.com/mochyfm/P1UD2_SimulacionDeHuertos/tree/experimento-tres) 
